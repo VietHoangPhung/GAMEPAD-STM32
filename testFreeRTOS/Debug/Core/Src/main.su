@@ -1,0 +1,13 @@
+../Core/Src/main.c:124:5:getValueButShorter	40	static
+../Core/Src/main.c:148:5:main	128	static
+../Core/Src/main.c:238:6:SystemClock_Config	88	static
+../Core/Src/main.c:284:13:MX_ADC1_Init	24	static
+../Core/Src/main.c:363:13:MX_I2C3_Init	8	static
+../Core/Src/main.c:397:13:MX_TIM2_Init	56	static
+../Core/Src/main.c:446:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:494:6:StartCollectingTask	16	static
+../Core/Src/main.c:537:6:StartKeyboardTask	16	static
+../Core/Src/main.c:556:6:StrartMouseTask	16	static
+../Core/Src/main.c:577:6:StartDisplayTask	16	static
+../Core/Src/main.c:604:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:621:6:Error_Handler	4	static,ignoring_inline_asm
