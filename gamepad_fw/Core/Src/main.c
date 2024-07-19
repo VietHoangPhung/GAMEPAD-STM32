@@ -34,6 +34,7 @@
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
 typedef struct
+__attribute__((__packed__))
 {
   uint8_t reportId;                                 // Report ID = 0x01 (1)
   uint8_t modifier;
@@ -43,6 +44,7 @@ typedef struct
 
 
 typedef struct
+__attribute__((__packed__))
 {
   uint8_t reportId;                                 // Report ID = 0x02 (2)
   uint8_t leftClick:1;
@@ -56,8 +58,9 @@ typedef struct
 
 
 typedef struct
+__attribute__((__packed__))
 {
-	uint8_t reportId; // = 0x03
+	uint8_t reportId; //                 //Report ID 0x03 (3)
 	uint16_t buttons;
 	int8_t leftX;
 	int8_t leftY;
@@ -245,8 +248,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  adcValue0 = 2047;//getValue(ADC_CHANNEL_0);
-	  adcValue1 = 2047;//getValue(ADC_CHANNEL_1);
+	  adcValue0 = getValue(ADC_CHANNEL_0);
+	  adcValue1 = getValue(ADC_CHANNEL_1);
 	  adcValue2 = getValue(ADC_CHANNEL_2);
 	  adcValue3 = getValue(ADC_CHANNEL_3);
 	  encoderValue = __HAL_TIM_GET_COUNTER(&htim2);
